@@ -138,7 +138,12 @@ function AppContent() {
           }}
         >
           {/* Navigation Bar */}
-          <AppBar position="static" color="default" elevation={0}>
+          <AppBar 
+              position="static" 
+            color="default" 
+            elevation={0} 
+            sx={{ backgroundColor: theme.palette.background.paper }}
+          >
             <Toolbar>
               {/* Logo and Title */}
               <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
