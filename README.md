@@ -1,4 +1,4 @@
-# Bemba to English Translator
+# Bemba to English
 
 This application provides a comprehensive leaderboard showcasing the relative rankings of models in translating Bemba to English.
 

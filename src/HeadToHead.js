@@ -10,10 +10,19 @@ import {
 } from '@mui/material';
 import { ResponsiveHeatMap } from '@nivo/heatmap';
 import battleTotals from './data/battle_totals.json';
+import { useNavigate } from 'react-router-dom';
+
+function formatModelName(name) {
+    return name
+      .toLowerCase()
+      .replace(/\./g, '_')        // Replace periods with underscores
+      .replace(/\s+/g, '_');      // Replace spaces with underscores
+  }
 
 function HeadToHead() {
   const theme = useTheme();
   const [battleType, setBattleType] = useState('judgment_battles');
+  const navigate = useNavigate();
 
   const battleTypes = Object.keys(battleTotals);
 
@@ -33,15 +42,6 @@ function HeadToHead() {
         value: parseInt(data[model].wins_against[opponent] || 0)
       }))
     }));
-  };
-
-  const formatModelName = (name) => {
-    return name
-      .replace(/_/g, ' ')
-      .replace(/\b\w/g, l => l.toUpperCase())
-      .replace(/Gpt/g, 'GPT')
-      .replace(/Aya/g, 'AYA')
-      .replace(/O1/g, 'O-1');
   };
 
   return (
@@ -97,13 +97,21 @@ function HeadToHead() {
           data={prepareHeatmapData(battleType)}
           margin={{ top: 20, right: 20, bottom: 80, left: 80 }}
           valueFormat=">-.0f"
-        //   axisTop={{
-        //     tickSize: 5,
-        //     tickPadding: 5,
-        //     tickRotation: 25, // Changed to positive 45 degrees
-        //     legend: '',
-        //     legendOffset: 46
-        //   }}
+          onClick={(cell, event) => {
+            // Extract model names from the cell object
+            const model1 = cell.serieId;     // Y-axis model name
+            const model2 = cell.data.x;      // X-axis model name
+
+            console.log('Model 1:', model1);
+            console.log('Model 2:', model2);
+
+            // Format model names before putting them in the URL
+            const formattedModel1 = formatModelName(model1);
+            const formattedModel2 = formatModelName(model2);
+
+            // Navigate to the comparison page with encoded formatted model names
+            navigate(`/compare/${encodeURIComponent(formattedModel1)}/${encodeURIComponent(formattedModel2)}`);
+          }}
           axisTop={null}
           axisRight={null}
           axisBottom={{
