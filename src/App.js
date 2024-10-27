@@ -18,6 +18,7 @@ import eloRankings from './data/elo_rankings.json';
 import hackerLogo from './hacker.png'; // Ensure this path is correct
 import { BrowserRouter as Router, Routes, Route, Link as RouterLink } from 'react-router-dom';
 import About from './About';
+import HeadToHead from './HeadToHead'; // Import the new component
 
 function App() {
   // State to manage the theme mode
@@ -129,7 +130,7 @@ function App() {
           {/* Main Container */}
           <Box
             sx={{
-              height: '100vh',
+              minHeight: '100vh', // Ensure the container covers the viewport height
               display: 'flex',
               flexDirection: 'column',
             }}
@@ -137,32 +138,57 @@ function App() {
             {/* Navigation Bar */}
             <AppBar position="static" color="default" elevation={0}>
               <Toolbar>
-                {/* Adjusted logo position */}
+                {/* Logo and Title */}
                 <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
                   <img
                     src={hackerLogo}
                     alt="Logo"
-                    style={{ width: '40px', height: '40px', marginRight: '10px' }}
+                    style={{ width: '40px', height: 'auto', marginRight: '4px', marginBottom: '7px' }}
                   />
                   <Typography variant="h6" color="inherit">
-                    Bemba to English
+                    Bemba-to-English
                   </Typography>
                 </Box>
+                {/* Navigation Links */}
                 <Link
                   component={RouterLink}
                   to="/"
                   color="primary.main"
                   underline="none"
-                  sx={{ mx: 2, '&:hover': { color: 'primary.main' } }}
+                  sx={{
+                    mx: 2,
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
                 >
                   Leaderboard
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to="/head-to-head"
+                  color="primary.main"
+                  underline="none"
+                  sx={{
+                    mx: 2,
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  Head to Head
                 </Link>
                 <Link
                   component={RouterLink}
                   to="/about"
                   color="primary.main"
                   underline="none"
-                  sx={{ mx: 2, '&:hover': { color: 'primary.main' } }}
+                  sx={{
+                    mx: 2,
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
                 >
                   About
                 </Link>
@@ -176,91 +202,100 @@ function App() {
             {/* Main Content */}
             <Box
               sx={{
-                flex: 1,
-                overflow: 'hidden',
+                flex: 1, // Allow the main content to grow and fill available space
                 px: 3,
                 pt: 3,
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
+                alignItems: 'center', // Center content horizontally
               }}
             >
               <Routes>
                 <Route
                   path="/"
                   element={
-                    <Box sx={{ maxWidth: '800px', width: '100%' }}>
-                      <Typography variant="h4" component="h1" gutterBottom>
-                        Bemba-to-English LLM Leaderboard
-                      </Typography>
-                      <Typography variant="body1" paragraph>
-                        This is a leaderboard showing the relative rankings of models at
-                        translating Bemba to English. The metrics are tested using the
-                        test set from the{' '}
-                        <Link
-                          href="https://github.com/csikasote/bigc"
-                          color="primary.main"
-                          target="_blank"
-                          rel="noopener"
+                    <Box
+                      sx={{
+                        width: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                      }}
+                    >
+                      {/* Container for both paragraph and table */}
+                      <Box sx={{ width: '75%', display: 'flex', flexDirection: 'column' }}>
+                        {/* Paragraph Section */}
+                        <Box sx={{ mb: 3, mt: 3 }}>
+                          <Typography variant="h5" component="h1" gutterBottom>
+                            Leaderboard
+                          </Typography>
+                          <Typography variant="body1" paragraph>
+                            This is a leaderboard showing the relative rankings of models at
+                            translating Bemba to English. The metrics are tested using the
+                            test set from the{' '}
+                            <Link
+                              href="https://github.com/csikasote/bigc"
+                              color="primary.main"
+                              target="_blank"
+                              rel="noopener"
+                              sx={{
+                                '&:hover': {
+                                  color: 'primary.main',
+                                },
+                              }}
+                            >
+                              Big C dataset
+                            </Link>
+                            . If you want more info about the methodologies, read the{' '}
+                            <Link
+                              component={RouterLink}
+                              to="/about"
+                              color="primary.main"
+                              sx={{
+                                '&:hover': {
+                                  color: 'primary.main',
+                                },
+                              }}
+                            >
+                              About
+                            </Link>{' '}
+                            page.
+                          </Typography>
+                        </Box>
+
+                        {/* DataGrid Table */}
+                        <Box
                           sx={{
-                            '&:hover': {
-                              color: 'primary.main',
-                            },
+                            height: 450,
+                            width: '100%',
+                            overflow: 'auto',
+                            mb: 1,
                           }}
                         >
-                          Big C dataset
-                        </Link>
-                        . If you want more info about the methodologies, read the{' '}
-                        <Link
-                          component={RouterLink}
-                          to="/about"
-                          color="primary.main"
-                          sx={{
-                            '&:hover': {
-                              color: 'primary.main',
-                            },
-                          }}
-                        >
-                          About
-                        </Link>{' '}
-                        page.
-                      </Typography>
-                      {/* DataGrid Table */}
-                      <Box
-                        sx={{
-                          flex: 1,
-                          overflow: 'auto',
-                          mb: 2,
-                          width: '100%',
-                        }}
-                      >
-                        <DataGrid
-                          rows={rows}
-                          columns={columns}
-                          disableSelectionOnClick
-                          sx={{
-                            backgroundColor: theme.palette.background.paper,
-                            color: theme.palette.text.primary,
-                            '& .MuiDataGrid-cell': {
-                              borderBottom: `1px solid ${theme.palette.divider}`,
-                            },
-                            '& .MuiDataGrid-columnHeaders': {
-                              backgroundColor: theme.palette.background.default,
-                              borderBottom: `1px solid ${theme.palette.divider}`,
-                            },
-                            '& .MuiDataGrid-footerContainer': {
-                              backgroundColor: theme.palette.background.default,
-                              borderTop: `1px solid ${theme.palette.divider}`,
-                            },
-                          }}
-                          componentsProps={{
-                            pagination: { pageSizeOptions: [5, 10, 20] },
-                          }}
-                        />
+                          <DataGrid
+                            rows={rows}
+                            columns={columns}
+                            disableSelectionOnClick
+                            hideFooter
+                            sx={{
+                              backgroundColor: theme.palette.background.paper,
+                              color: theme.palette.text.primary,
+                              '& .MuiDataGrid-cell': {
+                                borderBottom: `1px solid ${theme.palette.divider}`,
+                              },
+                              '& .MuiDataGrid-columnHeaders': {
+                                backgroundColor: theme.palette.background.default,
+                                borderBottom: `1px solid ${theme.palette.divider}`,
+                              },
+                              // Footer styles are not needed since the footer is hidden
+                            }}
+                          />
+                        </Box>
                       </Box>
                     </Box>
                   }
                 />
+                <Route path="/head-to-head" element={<HeadToHead />} />
                 <Route path="/about" element={<About />} />
               </Routes>
             </Box>
@@ -269,24 +304,21 @@ function App() {
             <Box
               component="footer"
               sx={{
-                py: 2,
+                py: 1.5, // Reduced padding
+                height: '40px', // Reduced height
                 textAlign: 'center',
                 backgroundColor: theme.palette.background.default,
               }}
             >
-              <Typography variant="body2" color="text.secondary">
-                &copy; {new Date().getFullYear()} Bemba to English Translation
-                Leaderboard
-              </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
+                &copy; {new Date().getFullYear()} Bemba to English Translation Leaderboard {' | '}
                 <Link
                   href="https://github.com/eliplutchok/bemba-to-english"
-                  color="primary.main"
-                  target="_blank"
-                  rel="noopener"
-                  sx={{
+                  underline="hover"
+                  sx={{ 
+                    color: 'text.secondary', // Use grey color
                     '&:hover': {
-                      color: 'primary.main',
+                      color: 'text.secondary', // Stay grey on hover
                     },
                   }}
                 >
@@ -295,12 +327,11 @@ function App() {
                 {' | '}
                 <Link
                   href="https://github.com/csikasote/bigc"
-                  color="primary.main"
-                  target="_blank"
-                  rel="noopener"
-                  sx={{
+                  underline="hover"
+                  sx={{ 
+                    color: 'text.secondary', // Use grey color
                     '&:hover': {
-                      color: 'primary.main',
+                      color: 'text.secondary', // Stay grey on hover
                     },
                   }}
                 >

@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Bemba to English Translator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application provides a comprehensive leaderboard showcasing the relative rankings of models in translating Bemba to English.
 
-## Available Scripts
+## How to Run the App
 
-In the project directory, you can run:
+To run the app locally:
 
-### `npm start`
+1. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies using:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Start the App**: Run the app in development mode with:
 
-### `npm test`
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm run build`
+## About
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application provides a comprehensive leaderboard showcasing the relative rankings of models in translating Bemba to English. The models are evaluated using the test set from the [Big C dataset](https://github.com/csikasote/bigc).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Metrics and Methodologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The models are evaluated based on several metrics, each designed to assess different aspects of translation quality. The rankings are determined using ELO ratings computed from these metrics.
 
-### `npm run eject`
+#### Judgment Battles
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In Judgment Battles, models are compared based on human-like judgments rendered by advanced language models (e.g., GPT-4). For each test instance, translations from two models are presented along with the original conversation in English. The language model acts as an evaluator, judging which translation is closer in meaning to the original conversation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### BERTScore Battles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+BERTScore utilizes contextual embeddings from pretrained BERT models to evaluate the similarity between candidate translations and reference translations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Text Embedding ADA-002 Battles
 
-## Learn More
+This metric evaluates models using embeddings from OpenAI's `text-embedding-ada-002` model. By converting texts into high-dimensional embeddings, we can compute cosine similarity scores to assess semantic similarity.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Consistency Battles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Consistency Battles measure how consistently a model translates when using a high temperature setting, while keeping all other conditions exactly the same. High temperature introduces randomness in the generation process, and models that produce consistent translations under these conditions are generally considered to be more correct. The assumption is that consistency aligns with correctness, and this has been validated by the alignment of these rankings with those from our other traditional metrics.
 
-### Code Splitting
+### ELO Rating System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The ELO rating system provides a method to rank models based on their relative performance in pairwise battles across all metrics.
 
-### Analyzing the Bundle Size
+## Additional Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For more detailed information about the methodologies, implementation details, or to access the data and code used in this project, please refer to our [Python Repository](https://github.com/eliplutchok/bemba-to-english-python).
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or would like to contribute, feel free to open an issue or submit a pull request.
