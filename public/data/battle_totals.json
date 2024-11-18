@@ -1,13 +1,14 @@
 {
   "judgment_battles": {
     "gpt_4o": {
-      "total_wins": 1724,
-      "total_losses": 880,
-      "total_ties": 391,
+      "total_wins": 1797,
+      "total_losses": 1281,
+      "total_ties": 418,
       "wins_against": {
         "google_translate": 271,
         "gemini_1_5_pro": 292,
         "llama_3_1_400b": 445,
+        "aya_8b_ft_v0_local": 73,
         "sonnet_3_point_5": 68,
         "o1_preview": 150,
         "aya_8b": 498
@@ -16,6 +17,7 @@
         "google_translate": 126,
         "gemini_1_5_pro": 115,
         "llama_3_1_400b": 9,
+        "aya_8b_ft_v0_local": 401,
         "sonnet_3_point_5": 397,
         "o1_preview": 233,
         "aya_8b": 0
@@ -24,22 +26,24 @@
         "google_translate": 104,
         "gemini_1_5_pro": 83,
         "llama_3_1_400b": 47,
+        "aya_8b_ft_v0_local": 27,
         "sonnet_3_point_5": 36,
         "o1_preview": 118,
         "aya_8b": 3
       }
     },
     "sonnet_3_point_5": {
-      "total_wins": 2665,
-      "total_losses": 176,
-      "total_ties": 154,
+      "total_wins": 2905,
+      "total_losses": 375,
+      "total_ties": 216,
       "wins_against": {
         "gemini_1_5_pro": 442,
         "google_translate": 466,
         "aya_8b": 501,
         "gpt_4o": 397,
         "llama_3_1_400b": 493,
-        "o1_preview": 366
+        "o1_preview": 366,
+        "aya_8b_ft_v0_local": 240
       },
       "losses_against": {
         "gemini_1_5_pro": 20,
@@ -47,7 +51,8 @@
         "aya_8b": 0,
         "gpt_4o": 68,
         "llama_3_1_400b": 2,
-        "o1_preview": 67
+        "o1_preview": 67,
+        "aya_8b_ft_v0_local": 199
       },
       "ties_against": {
         "gemini_1_5_pro": 28,
@@ -55,14 +60,16 @@
         "aya_8b": 0,
         "gpt_4o": 36,
         "llama_3_1_400b": 6,
-        "o1_preview": 68
+        "o1_preview": 68,
+        "aya_8b_ft_v0_local": 62
       }
     },
     "google_translate": {
-      "total_wins": 1237,
-      "total_losses": 1336,
-      "total_ties": 422,
+      "total_wins": 1260,
+      "total_losses": 1801,
+      "total_ties": 435,
       "wins_against": {
+        "aya_8b_ft_v0_local": 23,
         "gpt_4o": 126,
         "sonnet_3_point_5": 19,
         "o1_preview": 117,
@@ -71,6 +78,7 @@
         "aya_8b": 489
       },
       "losses_against": {
+        "aya_8b_ft_v0_local": 465,
         "gpt_4o": 271,
         "sonnet_3_point_5": 466,
         "o1_preview": 291,
@@ -79,6 +87,7 @@
         "aya_8b": 0
       },
       "ties_against": {
+        "aya_8b_ft_v0_local": 13,
         "gpt_4o": 104,
         "sonnet_3_point_5": 16,
         "o1_preview": 93,
@@ -88,15 +97,16 @@
       }
     },
     "o1_preview": {
-      "total_wins": 1870,
-      "total_losses": 742,
-      "total_ties": 383,
+      "total_wins": 1949,
+      "total_losses": 1134,
+      "total_ties": 413,
       "wins_against": {
         "llama_3_1_400b": 464,
         "gemini_1_5_pro": 316,
         "aya_8b": 499,
         "google_translate": 291,
         "gpt_4o": 233,
+        "aya_8b_ft_v0_local": 79,
         "sonnet_3_point_5": 67
       },
       "losses_against": {
@@ -105,6 +115,7 @@
         "aya_8b": 0,
         "google_translate": 117,
         "gpt_4o": 150,
+        "aya_8b_ft_v0_local": 392,
         "sonnet_3_point_5": 366
       },
       "ties_against": {
@@ -113,19 +124,21 @@
         "aya_8b": 2,
         "google_translate": 93,
         "gpt_4o": 118,
+        "aya_8b_ft_v0_local": 30,
         "sonnet_3_point_5": 68
       }
     },
     "gemini_1_5_pro": {
-      "total_wins": 1327,
-      "total_losses": 1197,
-      "total_ties": 416,
+      "total_wins": 1367,
+      "total_losses": 1636,
+      "total_ties": 427,
       "wins_against": {
         "gpt_4o": 115,
         "o1_preview": 104,
         "sonnet_3_point_5": 20,
         "llama_3_1_400b": 353,
         "google_translate": 276,
+        "aya_8b_ft_v0_local": 40,
         "aya_8b": 459
       },
       "losses_against": {
@@ -134,6 +147,7 @@
         "sonnet_3_point_5": 442,
         "llama_3_1_400b": 24,
         "google_translate": 123,
+        "aya_8b_ft_v0_local": 439,
         "aya_8b": 0
       },
       "ties_against": {
@@ -142,16 +156,18 @@
         "sonnet_3_point_5": 28,
         "llama_3_1_400b": 113,
         "google_translate": 91,
+        "aya_8b_ft_v0_local": 11,
         "aya_8b": 31
       }
     },
     "aya_8b": {
       "total_wins": 3,
-      "total_losses": 2825,
-      "total_ties": 167,
+      "total_losses": 3324,
+      "total_ties": 169,
       "wins_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "google_translate": 0,
         "llama_3_1_400b": 3,
@@ -160,6 +176,7 @@
       "losses_against": {
         "sonnet_3_point_5": 501,
         "o1_preview": 499,
+        "aya_8b_ft_v0_local": 499,
         "gpt_4o": 498,
         "google_translate": 489,
         "llama_3_1_400b": 379,
@@ -168,6 +185,7 @@
       "ties_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 2,
+        "aya_8b_ft_v0_local": 2,
         "gpt_4o": 3,
         "google_translate": 12,
         "llama_3_1_400b": 119,
@@ -175,15 +193,16 @@
       }
     },
     "llama_3_1_400b": {
-      "total_wins": 451,
-      "total_losses": 2121,
-      "total_ties": 423,
+      "total_wins": 454,
+      "total_losses": 2614,
+      "total_ties": 428,
       "wins_against": {
         "o1_preview": 5,
         "gpt_4o": 9,
         "gemini_1_5_pro": 24,
         "google_translate": 32,
         "sonnet_3_point_5": 2,
+        "aya_8b_ft_v0_local": 3,
         "aya_8b": 379
       },
       "losses_against": {
@@ -192,6 +211,7 @@
         "gemini_1_5_pro": 353,
         "google_translate": 363,
         "sonnet_3_point_5": 493,
+        "aya_8b_ft_v0_local": 493,
         "aya_8b": 3
       },
       "ties_against": {
@@ -200,19 +220,53 @@
         "gemini_1_5_pro": 113,
         "google_translate": 106,
         "sonnet_3_point_5": 6,
+        "aya_8b_ft_v0_local": 5,
         "aya_8b": 119
+      }
+    },
+    "aya_8b_ft_v0_local": {
+      "total_wins": 2888,
+      "total_losses": 458,
+      "total_ties": 150,
+      "wins_against": {
+        "google_translate": 465,
+        "gpt_4o": 401,
+        "llama_3_1_400b": 493,
+        "aya_8b": 499,
+        "gemini_1_5_pro": 439,
+        "o1_preview": 392,
+        "sonnet_3_point_5": 199
+      },
+      "losses_against": {
+        "google_translate": 23,
+        "gpt_4o": 73,
+        "llama_3_1_400b": 3,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 40,
+        "o1_preview": 79,
+        "sonnet_3_point_5": 240
+      },
+      "ties_against": {
+        "google_translate": 13,
+        "gpt_4o": 27,
+        "llama_3_1_400b": 5,
+        "aya_8b": 2,
+        "gemini_1_5_pro": 11,
+        "o1_preview": 30,
+        "sonnet_3_point_5": 62
       }
     }
   },
   "bert_score_battles": {
     "gpt_4o": {
-      "total_wins": 1847,
-      "total_losses": 1148,
+      "total_wins": 1909,
+      "total_losses": 1587,
       "total_ties": 0,
       "wins_against": {
         "google_translate": 328,
         "gemini_1_5_pro": 317,
         "llama_3_1_400b": 447,
+        "aya_8b_ft_v0_local": 62,
         "sonnet_3_point_5": 65,
         "o1_preview": 189,
         "aya_8b": 501
@@ -221,6 +275,7 @@
         "google_translate": 173,
         "gemini_1_5_pro": 173,
         "llama_3_1_400b": 54,
+        "aya_8b_ft_v0_local": 439,
         "sonnet_3_point_5": 436,
         "o1_preview": 312,
         "aya_8b": 0
@@ -229,14 +284,15 @@
         "google_translate": 0,
         "gemini_1_5_pro": 0,
         "llama_3_1_400b": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
         "aya_8b": 0
       }
     },
     "sonnet_3_point_5": {
-      "total_wins": 2758,
-      "total_losses": 237,
+      "total_wins": 2947,
+      "total_losses": 549,
       "total_ties": 0,
       "wins_against": {
         "gemini_1_5_pro": 464,
@@ -244,7 +300,8 @@
         "aya_8b": 501,
         "gpt_4o": 436,
         "llama_3_1_400b": 495,
-        "o1_preview": 388
+        "o1_preview": 388,
+        "aya_8b_ft_v0_local": 189
       },
       "losses_against": {
         "gemini_1_5_pro": 26,
@@ -252,7 +309,8 @@
         "aya_8b": 0,
         "gpt_4o": 65,
         "llama_3_1_400b": 6,
-        "o1_preview": 113
+        "o1_preview": 113,
+        "aya_8b_ft_v0_local": 312
       },
       "ties_against": {
         "gemini_1_5_pro": 0,
@@ -260,14 +318,16 @@
         "aya_8b": 0,
         "gpt_4o": 0,
         "llama_3_1_400b": 0,
-        "o1_preview": 0
+        "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0
       }
     },
     "google_translate": {
-      "total_wins": 1426,
-      "total_losses": 1569,
+      "total_wins": 1460,
+      "total_losses": 2036,
       "total_ties": 0,
       "wins_against": {
+        "aya_8b_ft_v0_local": 34,
         "gpt_4o": 173,
         "sonnet_3_point_5": 27,
         "o1_preview": 98,
@@ -276,6 +336,7 @@
         "aya_8b": 496
       },
       "losses_against": {
+        "aya_8b_ft_v0_local": 467,
         "gpt_4o": 328,
         "sonnet_3_point_5": 474,
         "o1_preview": 403,
@@ -284,6 +345,7 @@
         "aya_8b": 5
       },
       "ties_against": {
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
@@ -293,8 +355,8 @@
       }
     },
     "o1_preview": {
-      "total_wins": 2194,
-      "total_losses": 801,
+      "total_wins": 2287,
+      "total_losses": 1209,
       "total_ties": 0,
       "wins_against": {
         "llama_3_1_400b": 484,
@@ -302,6 +364,7 @@
         "aya_8b": 501,
         "google_translate": 403,
         "gpt_4o": 312,
+        "aya_8b_ft_v0_local": 93,
         "sonnet_3_point_5": 113
       },
       "losses_against": {
@@ -310,6 +373,7 @@
         "aya_8b": 0,
         "google_translate": 98,
         "gpt_4o": 189,
+        "aya_8b_ft_v0_local": 408,
         "sonnet_3_point_5": 388
       },
       "ties_against": {
@@ -318,12 +382,13 @@
         "aya_8b": 0,
         "google_translate": 0,
         "gpt_4o": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 0
       }
     },
     "gemini_1_5_pro": {
-      "total_wins": 1455,
-      "total_losses": 1485,
+      "total_wins": 1498,
+      "total_losses": 1932,
       "total_ties": 0,
       "wins_against": {
         "gpt_4o": 173,
@@ -331,6 +396,7 @@
         "sonnet_3_point_5": 26,
         "llama_3_1_400b": 407,
         "google_translate": 254,
+        "aya_8b_ft_v0_local": 43,
         "aya_8b": 486
       },
       "losses_against": {
@@ -339,6 +405,7 @@
         "sonnet_3_point_5": 464,
         "llama_3_1_400b": 83,
         "google_translate": 236,
+        "aya_8b_ft_v0_local": 447,
         "aya_8b": 4
       },
       "ties_against": {
@@ -347,16 +414,18 @@
         "sonnet_3_point_5": 0,
         "llama_3_1_400b": 0,
         "google_translate": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
       }
     },
     "aya_8b": {
-      "total_wins": 13,
-      "total_losses": 2982,
+      "total_wins": 18,
+      "total_losses": 3478,
       "total_ties": 0,
       "wins_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 5,
         "gpt_4o": 0,
         "google_translate": 5,
         "llama_3_1_400b": 4,
@@ -365,6 +434,7 @@
       "losses_against": {
         "sonnet_3_point_5": 501,
         "o1_preview": 501,
+        "aya_8b_ft_v0_local": 496,
         "gpt_4o": 501,
         "google_translate": 496,
         "llama_3_1_400b": 497,
@@ -373,6 +443,7 @@
       "ties_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "google_translate": 0,
         "llama_3_1_400b": 0,
@@ -380,8 +451,8 @@
       }
     },
     "llama_3_1_400b": {
-      "total_wins": 762,
-      "total_losses": 2233,
+      "total_wins": 777,
+      "total_losses": 2719,
       "total_ties": 0,
       "wins_against": {
         "o1_preview": 17,
@@ -389,6 +460,7 @@
         "gemini_1_5_pro": 83,
         "google_translate": 105,
         "sonnet_3_point_5": 6,
+        "aya_8b_ft_v0_local": 15,
         "aya_8b": 497
       },
       "losses_against": {
@@ -397,6 +469,7 @@
         "gemini_1_5_pro": 407,
         "google_translate": 396,
         "sonnet_3_point_5": 495,
+        "aya_8b_ft_v0_local": 486,
         "aya_8b": 4
       },
       "ties_against": {
@@ -405,19 +478,53 @@
         "gemini_1_5_pro": 0,
         "google_translate": 0,
         "sonnet_3_point_5": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
+      }
+    },
+    "aya_8b_ft_v0_local": {
+      "total_wins": 3055,
+      "total_losses": 441,
+      "total_ties": 0,
+      "wins_against": {
+        "google_translate": 467,
+        "gpt_4o": 439,
+        "llama_3_1_400b": 486,
+        "aya_8b": 496,
+        "gemini_1_5_pro": 447,
+        "o1_preview": 408,
+        "sonnet_3_point_5": 312
+      },
+      "losses_against": {
+        "google_translate": 34,
+        "gpt_4o": 62,
+        "llama_3_1_400b": 15,
+        "aya_8b": 5,
+        "gemini_1_5_pro": 43,
+        "o1_preview": 93,
+        "sonnet_3_point_5": 189
+      },
+      "ties_against": {
+        "google_translate": 0,
+        "gpt_4o": 0,
+        "llama_3_1_400b": 0,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 0,
+        "o1_preview": 0,
+        "sonnet_3_point_5": 0
       }
     }
   },
   "text_embedding_ada_002_battles": {
     "gpt_4o": {
-      "total_wins": 1859,
-      "total_losses": 1136,
+      "total_wins": 1925,
+      "total_losses": 1571,
       "total_ties": 0,
       "wins_against": {
         "google_translate": 306,
         "gemini_1_5_pro": 319,
         "llama_3_1_400b": 458,
+        "aya_8b_ft_v0_local": 66,
         "sonnet_3_point_5": 73,
         "o1_preview": 202,
         "aya_8b": 501
@@ -426,6 +533,7 @@
         "google_translate": 195,
         "gemini_1_5_pro": 171,
         "llama_3_1_400b": 43,
+        "aya_8b_ft_v0_local": 435,
         "sonnet_3_point_5": 428,
         "o1_preview": 299,
         "aya_8b": 0
@@ -434,14 +542,15 @@
         "google_translate": 0,
         "gemini_1_5_pro": 0,
         "llama_3_1_400b": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
         "aya_8b": 0
       }
     },
     "sonnet_3_point_5": {
-      "total_wins": 2722,
-      "total_losses": 273,
+      "total_wins": 2903,
+      "total_losses": 593,
       "total_ties": 0,
       "wins_against": {
         "gemini_1_5_pro": 446,
@@ -449,7 +558,8 @@
         "aya_8b": 501,
         "gpt_4o": 428,
         "llama_3_1_400b": 493,
-        "o1_preview": 393
+        "o1_preview": 393,
+        "aya_8b_ft_v0_local": 181
       },
       "losses_against": {
         "gemini_1_5_pro": 44,
@@ -457,7 +567,8 @@
         "aya_8b": 0,
         "gpt_4o": 73,
         "llama_3_1_400b": 8,
-        "o1_preview": 108
+        "o1_preview": 108,
+        "aya_8b_ft_v0_local": 320
       },
       "ties_against": {
         "gemini_1_5_pro": 0,
@@ -465,14 +576,16 @@
         "aya_8b": 0,
         "gpt_4o": 0,
         "llama_3_1_400b": 0,
-        "o1_preview": 0
+        "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0
       }
     },
     "google_translate": {
-      "total_wins": 1585,
-      "total_losses": 1410,
+      "total_wins": 1621,
+      "total_losses": 1875,
       "total_ties": 0,
       "wins_against": {
+        "aya_8b_ft_v0_local": 36,
         "gpt_4o": 195,
         "sonnet_3_point_5": 40,
         "o1_preview": 154,
@@ -481,6 +594,7 @@
         "aya_8b": 499
       },
       "losses_against": {
+        "aya_8b_ft_v0_local": 465,
         "gpt_4o": 306,
         "sonnet_3_point_5": 461,
         "o1_preview": 347,
@@ -489,6 +603,7 @@
         "aya_8b": 2
       },
       "ties_against": {
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
@@ -498,8 +613,8 @@
       }
     },
     "o1_preview": {
-      "total_wins": 2089,
-      "total_losses": 906,
+      "total_wins": 2171,
+      "total_losses": 1325,
       "total_ties": 0,
       "wins_against": {
         "llama_3_1_400b": 472,
@@ -507,6 +622,7 @@
         "aya_8b": 501,
         "google_translate": 347,
         "gpt_4o": 299,
+        "aya_8b_ft_v0_local": 82,
         "sonnet_3_point_5": 108
       },
       "losses_against": {
@@ -515,6 +631,7 @@
         "aya_8b": 0,
         "google_translate": 154,
         "gpt_4o": 202,
+        "aya_8b_ft_v0_local": 419,
         "sonnet_3_point_5": 393
       },
       "ties_against": {
@@ -523,12 +640,13 @@
         "aya_8b": 0,
         "google_translate": 0,
         "gpt_4o": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 0
       }
     },
     "gemini_1_5_pro": {
-      "total_wins": 1459,
-      "total_losses": 1481,
+      "total_wins": 1505,
+      "total_losses": 1925,
       "total_ties": 0,
       "wins_against": {
         "gpt_4o": 171,
@@ -536,6 +654,7 @@
         "sonnet_3_point_5": 44,
         "llama_3_1_400b": 405,
         "google_translate": 223,
+        "aya_8b_ft_v0_local": 46,
         "aya_8b": 488
       },
       "losses_against": {
@@ -544,6 +663,7 @@
         "sonnet_3_point_5": 446,
         "llama_3_1_400b": 85,
         "google_translate": 267,
+        "aya_8b_ft_v0_local": 444,
         "aya_8b": 2
       },
       "ties_against": {
@@ -552,16 +672,18 @@
         "sonnet_3_point_5": 0,
         "llama_3_1_400b": 0,
         "google_translate": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
       }
     },
     "aya_8b": {
       "total_wins": 9,
-      "total_losses": 2986,
+      "total_losses": 3487,
       "total_ties": 0,
       "wins_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "google_translate": 2,
         "llama_3_1_400b": 5,
@@ -570,6 +692,7 @@
       "losses_against": {
         "sonnet_3_point_5": 501,
         "o1_preview": 501,
+        "aya_8b_ft_v0_local": 501,
         "gpt_4o": 501,
         "google_translate": 499,
         "llama_3_1_400b": 496,
@@ -578,6 +701,7 @@
       "ties_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "google_translate": 0,
         "llama_3_1_400b": 0,
@@ -585,8 +709,8 @@
       }
     },
     "llama_3_1_400b": {
-      "total_wins": 732,
-      "total_losses": 2263,
+      "total_wins": 740,
+      "total_losses": 2756,
       "total_ties": 0,
       "wins_against": {
         "o1_preview": 29,
@@ -594,6 +718,7 @@
         "gemini_1_5_pro": 85,
         "google_translate": 71,
         "sonnet_3_point_5": 8,
+        "aya_8b_ft_v0_local": 8,
         "aya_8b": 496
       },
       "losses_against": {
@@ -602,6 +727,7 @@
         "gemini_1_5_pro": 405,
         "google_translate": 430,
         "sonnet_3_point_5": 493,
+        "aya_8b_ft_v0_local": 493,
         "aya_8b": 5
       },
       "ties_against": {
@@ -610,7 +736,40 @@
         "gemini_1_5_pro": 0,
         "google_translate": 0,
         "sonnet_3_point_5": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
+      }
+    },
+    "aya_8b_ft_v0_local": {
+      "total_wins": 3077,
+      "total_losses": 419,
+      "total_ties": 0,
+      "wins_against": {
+        "google_translate": 465,
+        "gpt_4o": 435,
+        "llama_3_1_400b": 493,
+        "aya_8b": 501,
+        "gemini_1_5_pro": 444,
+        "o1_preview": 419,
+        "sonnet_3_point_5": 320
+      },
+      "losses_against": {
+        "google_translate": 36,
+        "gpt_4o": 66,
+        "llama_3_1_400b": 8,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 46,
+        "o1_preview": 82,
+        "sonnet_3_point_5": 181
+      },
+      "ties_against": {
+        "google_translate": 0,
+        "gpt_4o": 0,
+        "llama_3_1_400b": 0,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 0,
+        "o1_preview": 0,
+        "sonnet_3_point_5": 0
       }
     }
   },
@@ -623,6 +782,7 @@
         "google_translate": 115,
         "gemini_1_5_pro": 278,
         "llama_3_1_400b": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 127,
         "o1_preview": 133,
         "aya_8b": 420
@@ -631,6 +791,7 @@
         "google_translate": 386,
         "gemini_1_5_pro": 209,
         "llama_3_1_400b": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 365,
         "o1_preview": 364,
         "aya_8b": 78
@@ -639,6 +800,7 @@
         "google_translate": 0,
         "gemini_1_5_pro": 3,
         "llama_3_1_400b": 0,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 9,
         "o1_preview": 4,
         "aya_8b": 3
@@ -654,7 +816,8 @@
         "aya_8b": 483,
         "gpt_4o": 365,
         "llama_3_1_400b": 0,
-        "o1_preview": 409
+        "o1_preview": 409,
+        "aya_8b_ft_v0_local": 0
       },
       "losses_against": {
         "gemini_1_5_pro": 35,
@@ -662,7 +825,8 @@
         "aya_8b": 18,
         "gpt_4o": 127,
         "llama_3_1_400b": 0,
-        "o1_preview": 89
+        "o1_preview": 89,
+        "aya_8b_ft_v0_local": 0
       },
       "ties_against": {
         "gemini_1_5_pro": 0,
@@ -670,7 +834,8 @@
         "aya_8b": 0,
         "gpt_4o": 9,
         "llama_3_1_400b": 0,
-        "o1_preview": 3
+        "o1_preview": 3,
+        "aya_8b_ft_v0_local": 0
       }
     },
     "google_translate": {
@@ -678,6 +843,7 @@
       "total_losses": 472,
       "total_ties": 1,
       "wins_against": {
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 386,
         "sonnet_3_point_5": 348,
         "o1_preview": 352,
@@ -686,6 +852,7 @@
         "aya_8b": 495
       },
       "losses_against": {
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 115,
         "sonnet_3_point_5": 152,
         "o1_preview": 149,
@@ -694,6 +861,7 @@
         "aya_8b": 6
       },
       "ties_against": {
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 0,
         "sonnet_3_point_5": 1,
         "o1_preview": 0,
@@ -712,6 +880,7 @@
         "aya_8b": 477,
         "google_translate": 149,
         "gpt_4o": 364,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 89
       },
       "losses_against": {
@@ -720,6 +889,7 @@
         "aya_8b": 24,
         "google_translate": 352,
         "gpt_4o": 133,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 409
       },
       "ties_against": {
@@ -728,6 +898,7 @@
         "aya_8b": 0,
         "google_translate": 0,
         "gpt_4o": 4,
+        "aya_8b_ft_v0_local": 0,
         "sonnet_3_point_5": 3
       }
     },
@@ -741,6 +912,7 @@
         "sonnet_3_point_5": 35,
         "llama_3_1_400b": 0,
         "google_translate": 50,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 418
       },
       "losses_against": {
@@ -749,6 +921,7 @@
         "sonnet_3_point_5": 455,
         "llama_3_1_400b": 0,
         "google_translate": 440,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 72
       },
       "ties_against": {
@@ -757,6 +930,7 @@
         "sonnet_3_point_5": 0,
         "llama_3_1_400b": 0,
         "google_translate": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
       }
     },
@@ -767,6 +941,7 @@
       "wins_against": {
         "sonnet_3_point_5": 18,
         "o1_preview": 24,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 78,
         "google_translate": 6,
         "llama_3_1_400b": 0,
@@ -775,6 +950,7 @@
       "losses_against": {
         "sonnet_3_point_5": 483,
         "o1_preview": 477,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 420,
         "google_translate": 495,
         "llama_3_1_400b": 0,
@@ -783,6 +959,7 @@
       "ties_against": {
         "sonnet_3_point_5": 0,
         "o1_preview": 0,
+        "aya_8b_ft_v0_local": 0,
         "gpt_4o": 3,
         "google_translate": 0,
         "llama_3_1_400b": 0,
@@ -799,6 +976,7 @@
         "gemini_1_5_pro": 0,
         "google_translate": 0,
         "sonnet_3_point_5": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
       },
       "losses_against": {
@@ -807,6 +985,7 @@
         "gemini_1_5_pro": 0,
         "google_translate": 0,
         "sonnet_3_point_5": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
       },
       "ties_against": {
@@ -815,7 +994,40 @@
         "gemini_1_5_pro": 0,
         "google_translate": 0,
         "sonnet_3_point_5": 0,
+        "aya_8b_ft_v0_local": 0,
         "aya_8b": 0
+      }
+    },
+    "aya_8b_ft_v0_local": {
+      "total_wins": 0,
+      "total_losses": 0,
+      "total_ties": 0,
+      "wins_against": {
+        "google_translate": 0,
+        "gpt_4o": 0,
+        "llama_3_1_400b": 0,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 0,
+        "o1_preview": 0,
+        "sonnet_3_point_5": 0
+      },
+      "losses_against": {
+        "google_translate": 0,
+        "gpt_4o": 0,
+        "llama_3_1_400b": 0,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 0,
+        "o1_preview": 0,
+        "sonnet_3_point_5": 0
+      },
+      "ties_against": {
+        "google_translate": 0,
+        "gpt_4o": 0,
+        "llama_3_1_400b": 0,
+        "aya_8b": 0,
+        "gemini_1_5_pro": 0,
+        "o1_preview": 0,
+        "sonnet_3_point_5": 0
       }
     }
   }
